@@ -38,7 +38,7 @@ const ListOrder: FC<listOrderType> = ({ listOrderArr }) => {
         if (listOrderArr.length > 0) {
             setListOrder(listOrderArr);
         }
-    }, [])
+    }, [listOrderArr.length])
 
 
     const deleteIdForDelete = (id: number) => {
@@ -128,7 +128,7 @@ const ListOrder: FC<listOrderType> = ({ listOrderArr }) => {
         <div className="m-2">
             <div className="flex flex-col sm:flex-row">
                 <AccordionFilter filterRequestDB={filterRequestDB} />
-                <Search dateSearch={dateSearch} />
+                <Search dataSearch={dateSearch} />
 
             </div>
             {responseDelete === "Удаление прошло успешно" && <AlertMessageSuccess text={responseDelete} />}

@@ -39,7 +39,7 @@ const ListPropane: FC<listPropaneType> = ({
             let newArr = [...listPropane];
             setListPropaneState(newArr);
         }
-    }, [])
+    }, [listPropane?.length])
 
     useEffect(() => {
         let idArr = [...idForDelete];
