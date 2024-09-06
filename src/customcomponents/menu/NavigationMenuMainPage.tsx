@@ -52,8 +52,6 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 const NavigationMenuMainPage = () => {
-
-
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -102,4 +100,7 @@ const ListItem = React.forwardRef<
     </li>
   )
 })
+
+
 export default NavigationMenuMainPage;
+
